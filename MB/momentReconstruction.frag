@@ -5,7 +5,7 @@ layout(pixel_interlock_unordered) in;
 
 uniform layout(binding = 0, rgba32f) coherent image2D momentTex;
 uniform layout(binding = 1, rgba32f)    coherent image2D totalMomentTex;
-uniform layout(binding = 2, rgba32f) image2D colorTex;
+uniform layout(binding = 2, rgba32f) coherent image2D colorTex;
 
 vec4 computeColor(){} //Generic color function
 
